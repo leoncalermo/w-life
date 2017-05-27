@@ -1,20 +1,14 @@
 .body-back
   form.form-formate(name='log_in_registration' novalidate ng-submit='logInCtrl.requestLogIn(log_in_registration.$valid)')
-      img(src='../assets/wbooks_logo.svg')
-      span.title
+      img.logo-wolox-life(src='../assets/WOLOX-LIFE-LOGO.png')
+      span.title-w-life
         | {{ 'LOG_IN.TITLE' | translate }}
-
-      span.field
-        | {{ 'LOG_IN.USERNAME' | translate }}
-      input.box-style(type='text' name='username' required ng-model='logInCtrl.requestLogInn.username')
-      p.error-format(ng-show='log_in_registration.username.$invalid && !log_in_registration.username.$pristine')
-        | {{ 'LOG_IN.REQ' | translate }}
-
-      span.field
-        | {{ 'LOG_IN.PASSWORD' | translate }}
-      input.box-style(type='password' name='password' required ng-model='logInCtrl.requestLogInn.password')
-      p.error-format(ng-show='log_in_registration.password.$invalid && !log_in_registration.password.$pristine')
-        | {{ 'LOG_IN.REQ' | translate }}
-
-      button.but-style(type='submit' ng-disabled='log_in_registration.$invalid')
-        | {{ 'LOG_IN.LOG' | translate }}
+      .field-section
+        span.field
+          | {{ 'LOG_IN.MAIL' | translate }}
+        input.mail(type='text' name='mail' required ng-model='logInCtrl.requestLogInn.mail')
+        span.field
+          | {{ 'LOG_IN.BUDDY' | translate }}
+        input.mail(type='password' name='password' required ng-model='logInCtrl.requestLogInn.password')
+      button.but-style(type='text')
+        | {{ 'LOG_IN.START' | translate }}

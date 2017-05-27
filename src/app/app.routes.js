@@ -43,7 +43,7 @@ angular.module('app-bootstrap').config([
       .state('principal', {
         abstract: true,
         data: {
-          requireLogin: true
+          requireLogin: false
         },
         views: {
           main: {
