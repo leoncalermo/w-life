@@ -3,15 +3,10 @@ angular.module('app-bootstrap').config([
   function ($translateProvider) {
     $translateProvider.translations ('es', {
       LOG_IN: {
-        TITLE: 'Logueo de usuarios',
-        USERNAME: 'Nombre de usuario',
-        PASSWORD: 'Contraseña',
-        LOG: 'Loguear',
-        REQ: 'Campo requerido.'
-      },
-      CTRL: {
-        LOG_ERROR: 'Combinación usuario contraseña inválido',
-        MISS_FIELDS: 'Faltan campos'
+        TITLE: 'Comenzar aventura',
+        MAIL: 'Mail de Wolox',
+        BUDDY: 'Escribe el nombre de tu buddy',
+        START: 'Comenzar'
       }
     });
   }
