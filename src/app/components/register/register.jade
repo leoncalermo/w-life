@@ -1,0 +1,34 @@
+.body-back
+  form.customer-fields(name='registrationForm' novalidate ng-submit='regCtrl.submitFormm(registrationForm.$valid)')
+    img(src='../assets/wbooks_logo.svg')
+    span.title
+      | {{ 'FORM.TITLE' | translate }}
+
+    span.field
+      | {{ 'FORM.FIRSTNAME' | translate }}
+    input.box-style(type='text' name='firstName'  ng-model='regCtrl.submitForm.firstname')
+
+    span.field
+      | {{ 'FORM.LASTNAME' | translate }}
+    input.box-style(type='text' name='lastName'  ng-model='regCtrl.submitForm.lastName')
+
+    span.field
+      | {{ 'FORM.USERNAME' | translate }}
+    input.box-style(type='text' name='username' required ng-model='regCtrl.submitForm.username')
+    p.error-format(ng-show='registrationForm.username.$invalid && !registrationForm.username.$pristine')
+      | {{ 'FORM.ERROR_REQUIRED' | translate }}
+
+    span.field
+      | {{ 'FORM.PASSWORD' | translate }}
+    input.box-style(type='password' name='password' required ng-model='regCtrl.submitForm.password' minlength='8' ng-pattern='regCtrl.passPattern')
+    p.error-format(ng-show='registrationForm.password.$invalid && !registrationForm.password.$pristine')
+      | {{ 'FORM.ERROR_DESC' | translate }}
+
+    span.field
+      | {{ 'FORM.EMAIL' | translate }}
+    input.box-style(type='email' name='email' required ng-model='regCtrl.submitForm.email')
+    p.error-format(ng-show='registrationForm.email.$invalid && !registrationForm.email.$pristine')
+      | {{ 'FORM.ERROR_REQUIRED' | translate }}
+
+    button.but-style(type='submit' ng-disabled='registrationForm.$invalid')
+      | {{ 'FORM.REGISTER' | translate }}

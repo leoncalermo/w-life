@@ -1,0 +1,172 @@
+.main-container {
+  margin: 0;
+  padding: 20px;
+}
+
+.back-style {
+  color: $author-black;
+}
+
+.book-detail-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 60px;
+  width: 800px;
+}
+
+.front-book {
+  background-color: $back-grey;
+  height: 270px;
+  width: 190px;
+}
+
+.front-book-undiff {
+  background-color: $back-grey;
+  height: 270px;
+  padding: 80px 40px;
+  width: 190px;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.title-style {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.author-style {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.theme-style {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.sinop-style {
+  color: $soft-grey;
+  font-size: 14px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 590px;
+}
+
+.rent {
+  background: $bright-blue;
+  border: 0;
+  color: $wolox-white;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  margin: 30px 0;
+  width: 190px;
+
+  &:after {
+    background: $wolox-white;
+    content: '...';
+    height: 1em;
+    position: absolute;
+    right: 550px;
+    top: 376px;
+    width: 1em;
+  }
+
+  &:disabled {
+    background: $light-grey;
+    border: 0;
+    color: $wolox-white;
+  }
+}
+
+
+.msj-format {
+  color: $furious-red;
+  font-size: 14px;
+  font-weight: bold;
+
+  &:not(.ng-hide) ~ .rent {
+    margin: 0;
+  }
+}
+
+.horizontal-line {
+  background: linear-gradient(to left, $bright-blue, $bright-blue, $bright-blue);
+  height: 1px;
+  margin: 15px auto;
+  width: 800px;
+}
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.comment-title {
+  color: $comment-green;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: flex-start;
+  padding: 15px 0;
+}
+
+.input-box {
+  height: 80px;
+  margin-left: 10px;
+  width: 650px;
+}
+
+.but-comment {
+  background: $magnifying-glass-green;
+  border: 0;
+  color: $wolox-white;
+  font-weight: bold;
+  height: 35px;
+  margin: 15px 75px 15px 85px;
+  width: 180px;
+}
+
+.comment-unit {
+  display: flex;
+  flex-direction: row;
+}
+
+.format-image {
+  border-radius: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 40px;
+  margin-left: 30px;
+  width: 40px;
+}
+
+.comment-info {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+
+.name {
+  color: $title-black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 10px;
+}
+
+.speach {
+  color: $soft-grey;
+  font-size: 14px;
+}

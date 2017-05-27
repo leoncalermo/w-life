@@ -1,0 +1,44 @@
+.update-profile-contanier {
+  border: 1px solid $wolox-white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 10px;
+  width: 600px;
+}
+
+.image-style {
+  border-radius: 50%;
+  height: 100px;
+  margin: 20px auto;
+  width: 100px;
+}
+
+.description {
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.input-style {
+  background-color: $shadow-grey;
+  border: 1px solid $shadow-grey;
+  margin: 10px;
+}
+
+.but-style {
+  background: $submit-green;
+  border: 0;
+  height: 38px;
+}
+
+.error-format {
+  color: $wolox-red;
+  font-size: 12px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+}

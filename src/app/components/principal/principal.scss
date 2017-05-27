@@ -1,0 +1,59 @@
+@import url('fonts.googleapis.com/css?family=Roboto');
+
+* {
+  font-family: 'Roboto', Sans-Serif;
+ }
+
+.home-header {
+  align-items: center;
+  background: $wolox-white;
+  box-shadow: 0 5px 10px 0 $shadow-grey;
+  display: flex;
+  flex-direction: row;
+  height: 92px;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.feature {
+  background-color: $wolox-white;
+  border: 0;
+  height: 60px;
+  padding: 0 15px;
+  width: 70px;
+
+  &:hover {
+    background-color: $wolox-white;
+    border: 0;
+  }
+}
+
+.not-list {
+  font-size: 16px;
+  left: initial;
+  right: 10px;
+  top: 45px;
+}
+
+.add-list {
+  left: -100px;
+  top: 45px;
+}
+
+.nav-item {
+  background-color: $wolox-white;
+  border-radius: 50%;
+  height: 70px;
+  padding: 15px;
+  width: 70px;
+}
+
+.wbooks {
+  box-shadow: none;
+  height: 50px;
+}
+
+.but-not {
+  background-color: $wolox-white;
+  border: 0;
+}

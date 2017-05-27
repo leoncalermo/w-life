@@ -1,0 +1,39 @@
+.suggest-book-background
+  form.suggest-form(name='suggestBookForm' novalidate ng-submit='suggestCtrl.suggestBook(suggestBookForm.$valid)')
+    .title
+      img.title-img(src='../assets/add_book.svg')
+      span.title-text
+        | {{ 'SUGGEST.TITLE' | translate }}
+    .inputs
+      span.input-leyend
+        | {{ 'SUGGEST.NAME' | translate }}
+      input.input-suggest-l(type='text' name='bookName' required ng-model='suggestCtrl.suggestData.name')
+      p.error-font(ng-show='suggestBookForm.bookName.$invalid && !suggestBookForm.bookName.$pristine')
+        | {{ 'SUGGEST.ERROR_NAME' | translate }}
+    .inputs
+      span.input-leyend
+        | {{ 'SUGGEST.AUTHOR' | translate }}
+      input.input-suggest-l(type='text' name='bookAuthor' ng-model='suggestCtrl.suggestData.author')
+    .inputs
+      span.input-leyend
+        | {{ 'SUGGEST.PRICE' | translate }}
+      input.input-suggest-s(type='text' name='bookPrice' ng-model='suggestCtrl.suggestData.cost')
+    .inputs
+      span.input-leyend
+        | {{ 'SUGGEST.YEAR' | translate }}
+      input.input-suggest-s(type='number' name='bookYear' ng-model='suggestCtrl.suggestData.year' min='1900' max='2500')
+      p.error-font(ng-show='suggestBookForm.bookYear.$invalid && !suggestBookForm.bookYear.$pristine')
+        | {{ 'SUGGEST.ERROR_YEAR' | translate }}
+    .inputs
+      span.input-leyend
+        | {{ 'SUGGEST.EDITORIAL' | translate }}
+      input.input-suggest-l(type='text' name='bookEdit' ng-model='suggestCtrl.suggestData.publisher')
+    .inputs
+      span.input-leyend
+        | {{ 'SUGGEST.LINK' | translate }}
+      input.input-suggest-l(type='text' name='bookLink' ng-model='suggestCtrl.suggestData.link')
+    .buttons-setion
+      button.but-cancel(type='button' ng-click='suggestCtrl.cancel()')
+        | {{ 'SUGGEST.BUT_CANCEL' | translate }}
+      button.but-suggest(type='submit' ng-disabled='suggestBookForm.$invalid')
+        | {{ 'SUGGEST.BUT_SUGGEST' | translate }}

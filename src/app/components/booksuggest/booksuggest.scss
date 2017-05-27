@@ -1,0 +1,90 @@
+.suggest-book-background {
+  background: $register-back;
+}
+
+.suggest-form {
+  background: $wolox-white;
+  display: flex;
+  flex-wrap: wrap;
+  height: 700px;
+  margin: auto;
+  width: 700px;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.title-img {
+  height: 50px;
+  justify-content: center;
+  width: 50px;
+}
+
+.title-text {
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.inputs {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 15px;
+  padding: 20px;
+}
+
+.error-font {
+  color: $wolox-red;
+  font-size: 10px;
+}
+
+.input-suggest-l {
+  background: $submit-green;
+  border: 0;
+  height: 38px;
+  width: 541px;
+}
+
+.input-suggest-s {
+  background: $submit-green;
+  border: 0;
+  height: 38px;
+  width: 254px;
+}
+
+.input-leyend {
+  font-size: 12px;
+  justify-content: flex-start;
+}
+
+.buttons-setion {
+  margin: 0 auto;
+}
+
+.but-suggest {
+  background-color: $bright-blue;
+  border: 0;
+  color: $wolox-white;
+  font-size: 14px;
+  font-weight: bold;
+  height: 40px;
+  margin: 0 10px;
+  width: 175px;
+}
+
+.but-cancel {
+  background-color: $translucent-grey;
+  border: 0;
+  color: $wolox-white;
+  font-size: 14px;
+  font-weight: bold;
+  height: 40px;
+  margin: 0 10px;
+  width: 175px;
+}

@@ -1,0 +1,35 @@
+.update-profile-body
+  form.update-profile-contanier(name='updateForm' novalidate ng-submit='updateProfCtrl.updateChanges(updateForm.$valid)')
+    img.image-style(src='http://placehold.it/100x100')
+    span.title
+      | {{ 'UPDT.TITLE' | translate }}
+
+    span.description
+      | {{ 'UPDT.FIRSTNAME' | translate }}
+    input.input-style(type='text' name='firstName' ng-model='updateProfCtrl.updateSubmit.firstname')
+
+    span.description
+      | {{ 'UPDT.LASTNAME' | translate }}
+    input.input-style(type='text' name='lastName' ng-model='updateProfCtrl.updateSubmit.lastName')
+
+    span.description
+      | {{ 'UPDT.USERNAME' | translate }}
+    input.input-style(type='text' name='userName' ng-model='updateProfCtrl.updateSubmit.username')
+
+    span.description
+      | {{ 'UPDT.PASSWORD_1' | translate }}
+    input.input-style(type='password' name='password' ng-model='updateProfCtrl.updateSubmit.password' minlength='8' ng-pattern='updateProfCtrl.passPattern' ng-model-options="{ updateOn: 'blur' }" ng-blur='updateProfCtrl.validation(updateForm)')
+    p.error-format(ng-show='updateForm.password.$invalid && !updateForm.password.$pristine')
+      | {{ 'UPDT.ERROR_PASS1' | translate }}
+
+    span.description
+      | {{ 'UPDT.PASSWORD_2' | translate }}
+    input.input-style(type='password' name='passwordConf' ng-model='updateProfCtrl.updateSubmit.passwordConf' ng-blur='updateProfCtrl.validation(updateForm)')
+    p.error-format(ng-show='updateForm.passwordConf.$invalid && !updateForm.passwordConf.$pristine')
+      | {{ 'UPDT.ERROR_PASS2' | translate }}
+
+    .buttons
+      button.but-style(type='submit' ng-disabled='updateForm.$invalid || updateForm.$pristine')
+        | {{ 'UPDT.SUBMIT' | translate }}
+      button.but-style(type='submit' ui-sref='principal.profile')
+        | {{ 'UPDT.CANCEL' | translate }}

@@ -1,0 +1,43 @@
+.main-container
+  a.back-style(ui-sref='principal.home')
+    | {{ 'BOOK.BACK' | translate }}
+  .book-detail-content
+    img.front-book(ng-src='{{bookCtrl.book.imageUrl}}' ng-show='bookCtrl.book.imageUrl')
+    img.front-book-undiff(src='../assets/default_book.svg' ng-hide='bookCtrl.book.imageUrl')
+    .datos
+      span.title-style
+        | {{bookCtrl.book.name}}
+      span.author-style
+        | {{bookCtrl.book.author}}
+      span.theme-style
+        | {{bookCtrl.book.year}}
+      span.theme-style
+        | {{bookCtrl.bookPlus.tematica}}
+      span.sinop-style
+        | {{bookCtrl.bookPlus.sinopsis | cut: 295}}
+      p.msj-format(ng-show='!bookCtrl.availableForRent && bookCtrl.rentByMe')
+        | {{ 'BOOK.DATE' | translate: { dateParam: bookCtrl.dateDev } }}
+      p.msj-format(ng-show='!bookCtrl.availableForRent && !bookCtrl.rentByMe')
+        | {{ 'BOOK.WISH' | translate }}
+      p.msj-format(ng-show='bookCtrl.availableForRent && !bookCtrl.rentByMe')
+        | {{ 'BOOK.ADD_WISH' | translate }}
+      button.rent(type='submit' ng-click='bookCtrl.makeRequest()' ng-disabled='bookCtrl.available()')
+        | {{ bookCtrl.rentByMe ? 'BOOK.BUT_RENT' : 'BOOK.BUT_WISH' | translate }}
+  .horizontal-line
+  .comment-section
+    span.comment-title
+      | {{ 'BOOK.COM_TITLE' | translate }}
+    form.comment-input(name='comment_form' novalidate ng-submit='bookCtrl.registerComment(comment_form.$valid)')
+      img.format-image(ng-src='{{bookCtrl.imageUrl}}')
+      input.input-box(type='text' name='comment' ng-model='bookCtrl.bookComment.speach' maxlength='255')
+      button.but-comment(type='submit' ng-disabled='comment_form.$invalid || comment_form.$pristine')
+        | {{ 'BOOK.BUT_COMMENT' | translate }}
+    .comment-unit(ng-repeat='comment in bookCtrl.comments')
+      img.format-image(src='http://placehold.it/100x100')
+      .comment-info
+        span.name
+          | {{comment.user.username}}
+        span.date
+          | {{comment.createdAt | date:'MM/dd/yyyy h:mma'}}
+        span.speach
+          | {{comment.comment}}

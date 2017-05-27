@@ -1,0 +1,77 @@
+@import url('fonts.googleapis.com/css?family=Roboto');
+
+* {
+  font-family: 'Roboto', Sans-Serif;
+ }
+
+.home-content {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 100px 0 20px;
+}
+
+.home-body {
+  display: flex;
+  padding: 20px 0 20px 20px;
+}
+
+.filter {
+  background: $submit-green;
+  border: 0;
+  height: 38px;
+  padding-left: 28px;
+  width: 238px;
+}
+
+.search {
+  padding-left: 28px;
+}
+
+.magnifying-glass {
+  background: $magnifying-glass-green;
+  border: 0;
+  height: 38px;
+  width: 38px;
+}
+
+.main-books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.list-books {
+  align-items: center;
+}
+
+.each-book {
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.front-book {
+  background-color: $back-grey;
+  height: 180px;
+  width: 130px;
+}
+
+.front-book-undiff {
+  background-color: $back-grey;
+  height: 180px;
+  padding: 54px 26px;
+  width: 130px;
+}
+
+.title-book {
+  color: $title-black;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19px;
+}
+
+.author-book {
+  color: $author-black;
+  font-size: 12px;
+  line-height: 19px;
+}
