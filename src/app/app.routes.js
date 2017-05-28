@@ -73,6 +73,46 @@ angular.module('app-bootstrap').config([
           }
         }
       })
+      .state('principal.level1', {
+        url: '/level1',
+        views: {
+          'rest-page': {
+            templateUrl: '../app/components/level1/level1.html',
+          }
+        }
+      })
+      .state('principal.level2', {
+        url: '/level2',
+        views: {
+          'rest-page': {
+            templateUrl: '../app/components/level2/level2.html',
+          }
+        }
+      })
+      .state('principal.level3', {
+        url: '/level3',
+        views: {
+          'rest-page': {
+            templateUrl: '../app/components/level3/level3.html',
+          }
+        }
+      })
+      .state('principal.level4', {
+        url: '/level4',
+        views: {
+          'rest-page': {
+            templateUrl: '../app/components/level4/level4.html',
+          }
+        }
+      })
+      .state('principal.level5', {
+        url: '/level5',
+        views: {
+          'rest-page': {
+            templateUrl: '../app/components/level5/level5.html',
+          }
+        }
+      })
       .state('principal.books', {
         url: '/books/{objectId}',
         views: {
