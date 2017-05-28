@@ -1,8 +1,8 @@
 angular.module('app-bootstrap').controller('MapController',
-  [
-    function () {
-      this.level = 4;
-
+  ['levelsService',
+    function (levelsService) {
+      this.level = levelsService.actualLevel();
+      console.log(this.level);
     }
   ]
 );

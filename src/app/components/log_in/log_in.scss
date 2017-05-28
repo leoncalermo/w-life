@@ -2,12 +2,16 @@
   background-color: $wolox-blue;
 }
 
+.m-top-2 {
+  margin-top: 20px;
+}
+
 .form-formate {
   align-items: inherit;
   background-color: $wolox-white;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   justify-content: space-around;
   margin: auto;
   padding: 20px 10px;

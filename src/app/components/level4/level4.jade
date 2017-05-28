@@ -1,4 +1,4 @@
-.general-content
+.general-content(ng-if='lvl4Ctrl.level === 3')
   .clue-content
     img.p-top-5(src='../assets/buddy.png')
     .clue-title
@@ -9,5 +9,130 @@
         | multiplicado por cinco menos uno es un número clave para la
         | Introducción a la programación C.
         | Buscalo en el 2ªA.
-  button.start-button(ui-sref='principal.map')
-    | Challenge accepted
+  button.fount-it-button(ui-sref='principal.map' ng-click='lvl4Ctrl.passLevel()')
+    img.found-it-img(src='../assets/check-mark.png')
+    span.text-button
+      | Encontrado
+.intro-content(ng-if='lvl4Ctrl.level > 3')
+  .perk-item
+    spam.perk-title.color-blue
+      | W fruta
+    .h-line.color-blue
+    span.perk-sub-title.color-blue
+      | Frutas para todos en el 2
+    span.perk-description
+      | Todos los lunes personas con audición reducida nos ofrecen un servicio
+      | de entrega de frutas.
+  .perk-item
+    spam.perk-title.color-green.left
+      | Home Office
+    .h-line.color-green
+    span.perk-sub-title.color-green.left
+      | Días de trabajo remoto
+    span.perk-description
+      | Los woloxers que cuenten con una carga horaria de 30h semanales podrán
+      | contar con 2 días al mes de home office, mientras que los que estan 40
+      | tendrán 4. Deben pedirse con 1 semana de antelación
+  .perk-item
+    spam.perk-title.color-blue
+      | Mi Barrio
+    .h-line.color-blue
+    span.perk-sub-title.color-blue
+      | 20% off
+    span.perk-description
+      | 20% de descuento en todas las hamburguesas de lunes a viernes siempre
+      | que sean 3 o más personas y digan que son de Wolox
+  .perk-item
+    spam.perk-title.color-green.left
+      | W Masajes
+    .h-line.color-green
+    span.perk-sub-title.color-green.left
+      | Masajes para todos los Woloxers
+    span.perk-description
+      | Todos los martes personas con visión reducida nos ofrecen un servicio
+      | de masajes.
+  .perk-item
+    spam.perk-title.color-blue.m-bottom-15
+      | W Housing
+    .h-line.color-blue.m-bottom-15
+    span.perk-description
+      | Wolox te ayuda a dar ese primer paso para irte a vivir solo. Si te
+      | interesa preguntá más detalles en peoplecare@wolox.com.ar
+  .perk-item
+    spam.perk-title.color-green.m-bottom-15.left
+      | Leasing de compus
+    .h-line.color-green.m-bottom-15
+    span.perk-description
+      | Wolox te ayuda a financiar la computadora de tus sueños. Entregamos una
+      | cada 2 meses. Si te interesa preguntá más detalles en
+      | peoplecare@wolox.com.ar
+  .perk-item
+    spam.perk-title.color-blue.m-bottom-15
+      | Deutch
+    .h-line.color-blue.m-bottom-15
+    span.perk-description
+      | Wolox ofrece lugar para clases de alemán. Para más info contactar a
+      | deutsch-info@wolox.com.ar
+  .perk-item
+    spam.perk-title.color-green.left
+      | W books
+    .h-line.color-green
+    span.perk-sub-title.color-green.left
+      | Disfrutá de los libros de la w biblioteca del 2A
+    span.perk-description
+      | Tomá prestado cualquier libro del 2A. Tan solo anotate en el papel que
+      | vas a encontrar al lado para dejar constancia de quién tiene el libro
+      | cada momento. Si querés un libro que no tenemos pedilo!
+  .perk-item
+    spam.perk-title.color-blue
+      | Sonno due (La sombri)
+    .h-line.color-blue
+    span.perk-sub-title.color-blue
+      | $100 precio fijo en el menú del día!
+    span.perk-description
+      | No duden en decir que son de Wolox para que Charlie les haga un
+      | precio especial.
+  .perk-item
+    spam.perk-title.color-green.m-bottom-15.left
+      | SION
+    .h-line.color-green.m-bottom-15
+    span.perk-description
+      | Convenio con la proveedora de internet SION para que puedan disfrutar
+      | el servicio de internet en sus casas a un precio módico!
+  .perk-item
+    spam.perk-title.color-blue
+      | OSDE
+    .h-line.color-blue
+    span.perk-sub-title.color-blue
+      | OSDE 210 para los woloxers
+    span.perk-description
+      | Los woloxers que tengan una carga igual o superior a 30h semanales
+      | contaran con la cobertura de la obra social OSDE 210
+  .perk-item
+    spam.perk-title.color-green.left
+      | W snacks
+    .h-line.color-green
+    span.perk-sub-title.color-green.left
+      | Snacks gratis para todos
+    span.perk-description
+      | Alfajores, galletitas, fruta, bizcochitos, mate, café, etc. - Se
+      | terminó algo? Querés sugerir otro snack? Hacénoslo saber! Comunicate
+      | con nosotros!
+  .perk-item
+    spam.perk-title.color-blue
+      | PorDelivery
+    .h-line.color-blue
+    span.perk-sub-title.color-blue
+      | 12% off y 20$ de descuento
+    span.perk-description
+      | Si se loggean con su mail de wolox tendrán su descuento. Si x es el
+      | precio del plato, el nuevo valor será x * 0.88 - 20
+  .perk-item
+    spam.perk-title.color-green.left
+      | Gym Hakkyo
+    .h-line.color-green
+    span.perk-sub-title.color-green.left
+      | 15% en pases libres trimestrales, semestrales y anuales!
+    span.perk-description.m-bottom-3
+      | Accedé al descuento llevando un recibo de sueldo! El pago solo se
+      | acepta en efectivo.

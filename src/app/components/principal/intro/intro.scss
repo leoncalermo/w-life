@@ -19,6 +19,20 @@
   text-align: center;
 }
 
+.leve5-speach {
+  background-color: $wolox-white;
+  border: solid 2px $wolox-blue;
+  border-radius: 20px;
+  color: $wolox-blue;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 50px;
+  padding: 15px;
+  position: absolute;
+  top: 350px;
+}
+
 .intro-speach {
   // background-color: $wolox-blue;
   background-color: $wolox-white;
@@ -127,4 +141,9 @@
   color: $author-black;
   font-size: 12px;
   line-height: 19px;
+}
+
+.general-content {
+  max-height: 1280px;
+  max-width: 800px;
 }
