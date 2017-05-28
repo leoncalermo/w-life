@@ -77,7 +77,7 @@ angular.module('app-bootstrap').config([
         url: '/level1',
         views: {
           'rest-page': {
-            templateUrl: '../app/components/level1/level1.html',
+            templateUrl: '../app/components/level1/level1.html'
           }
         }
       })
@@ -85,7 +85,7 @@ angular.module('app-bootstrap').config([
         url: '/level2',
         views: {
           'rest-page': {
-            templateUrl: '../app/components/level2/level2.html',
+            templateUrl: '../app/components/level2/level2.html'
           }
         }
       })
@@ -93,7 +93,7 @@ angular.module('app-bootstrap').config([
         url: '/level3',
         views: {
           'rest-page': {
-            templateUrl: '../app/components/level3/level3.html',
+            templateUrl: '../app/components/level3/level3.html'
           }
         }
       })
@@ -101,7 +101,7 @@ angular.module('app-bootstrap').config([
         url: '/level4',
         views: {
           'rest-page': {
-            templateUrl: '../app/components/level4/level4.html',
+            templateUrl: '../app/components/level4/level4.html'
           }
         }
       })
@@ -109,7 +109,7 @@ angular.module('app-bootstrap').config([
         url: '/level5',
         views: {
           'rest-page': {
-            templateUrl: '../app/components/level5/level5.html',
+            templateUrl: '../app/components/level5/level5.html'
           }
         }
       })

@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Days+One');
 
 .map {
-  background-color: $yellow-green;
+  background-image: url('../assets/mapa_wolox3.png');
   height: calc(100vh - 92px);
+}
+
+.map-img {
+  height: 1200px;
+  width: 800px;
+  position: fixed;
+  top: 88px;
+  left: -9px;
 }
 
 .main-letter {
 
   & > .bubble {
-    font-size: 150px;
     font-family: 'Days One', sans-serif;
+    font-size: 150px;
     text-align: center;
   }
 
@@ -29,14 +37,14 @@
 .bubble {
 
   &.present {
-    height: 200px;
-    width: 200px;
-    background-color: white;
+    -moz-box-shadow: 0 0 59px 19px $register-back;
+    -webkit-box-shadow: 0 0 59px 19px $register-back;
+    background-color: $wolox-beige;
     border-radius: 50%;
+    box-shadow: 0 0 59px 19px $register-back;
+    height: 200px;
     margin: 0 auto;
-    -webkit-box-shadow: 0px 0px 59px 19px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 59px 19px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 59px 19px rgba(0,0,0,0.75);
+    width: 200px;
   }
 
   &.future {
