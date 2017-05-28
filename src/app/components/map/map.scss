@@ -26,6 +26,21 @@
   }
 }
 
+.clue-content {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 700px;
+  position: relative;
+}
+
+.clue-title {
+  align-self: center;
+  color: $wolox-blue;
+  font-size: 80px;
+  padding-left: 70px;
+}
+
 .first-o {
   color: $bright-blue;
 }
