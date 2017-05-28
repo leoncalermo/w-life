@@ -1,4 +1,4 @@
-angular.module('app-bootstrap').controller('HomeController',
+angular.module('app-bootstrap').controller('IntroController',
   ['booksService', 'logInService', '$state', 'sessionService',
   function (booksService, logInService, $state, sessionService) {
 
