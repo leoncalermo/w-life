@@ -43,7 +43,7 @@ angular.module('app-bootstrap').config([
       .state('principal', {
         abstract: true,
         data: {
-          requireLogin: true
+          requireLogin: false
         },
         views: {
           main: {
@@ -60,6 +60,16 @@ angular.module('app-bootstrap').config([
             templateUrl: '../app/components/principal/home/home.html',
             controller: 'HomeController',
             controllerAs: 'homeCtrl'
+          }
+        }
+      })
+      .state('principal.map', {
+        url: '/map',
+        views: {
+          'rest-page': {
+            templateUrl: '../app/components/map/map.html',
+            controller: 'MapController',
+            controllerAs: 'mapCtrl'
           }
         }
       })
