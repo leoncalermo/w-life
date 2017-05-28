@@ -1,7 +1,7 @@
 angular.module('app-bootstrap').controller('MapController',
   [
     function () {
-      this.level = 1;
+      this.level = 4;
 
     }
   ]
