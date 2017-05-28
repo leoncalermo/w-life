@@ -1,5 +1,41 @@
-.map
-  .row
-    .col-sm-12
-      .bubble
-        | LEV 5
+.intro-content(ng-if='lvl5Ctrl.level == 4')
+  .clue-content
+    img.p-top-5(src='../assets/buddy.png')
+    .clue-title
+      | Nivel X
+    .leve5-speach
+      span.title2.center2
+        | Para conseguir tu última letra, te invitamos a participar de una o
+        | más de las siguientes actividades que definen la vida en Wolox:
+      span.title2.center2
+        | Escapada
+      span.title2.center2
+        | Tech & Talk
+      span.title2.center2
+        | W-After
+      span.title2.center2
+        | W-Bar
+      span.title2.center2
+        | W-Fest
+      span.title2.center2
+        | W-Gaming
+      span.title2.center2
+        | Wackathon
+      span.title2.center2
+        | Workshops
+  button.fount-it-button2(ui-sref='principal.map' ng-click='lvl4Ctrl.passLevel()')
+    img.found-it-img(src='../assets/check-mark.png')
+    span.text-button
+      | Encontrado
+.intro-content.final-background(ng-if='lvl5Ctrl.level > 4')
+  .final-title
+    | ¡Felicitaciones, completaste tu primer etapa en Wolox Life!
+  .final-content
+    .text-section
+      .sumary-content
+        | “El verdadero tesoro de Wolox Life fue el camino que recorriste desde que
+        | ingresaste a Wolox a hoy. Las aventuras por venir llevarán tu experiencia
+        | al próximo nivel.” Conquis
+      .last-thing
+        | Continuará…
+    img.avatar-img(src='../assets/leon-avatar1.png')

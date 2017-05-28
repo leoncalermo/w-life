@@ -2,28 +2,40 @@
 
 .map {
   background-image: url('../assets/mapa_wolox3.png');
-  height: calc(100vh - 92px);
+  height: 1188px;
+  max-width: 800px;
+  width: 800px;
+  max-height: 1280px;
+}
+
+.column-map {
+  display: flex;
+  flex-direction: column;
+}
+
+.m-column-left {
+  margin-right: 120px;
+}
+
+.m-column-right {
+  margin-right: 400px;
 }
 
 .map-img {
   height: 1200px;
-  width: 800px;
+  left: -9px;
   position: fixed;
   top: 88px;
-  left: -9px;
+  width: 800px;
 }
 
-.main-letter {
+.right {
+  align-self: center;
+}
 
-  & > .bubble {
-    font-family: 'Days One', sans-serif;
-    font-size: 150px;
-    text-align: center;
-  }
-
-  &.gap {
-    opacity: 0;
-  }
+.map-nop-dev {
+  background-image: url('../assets/weAreBuilding.png');
+  height: calc(100% - 92px);
 }
 
 .clue-content {
@@ -41,6 +53,81 @@
   padding-left: 70px;
 }
 
+.fount-it-button {
+  align-items: center;
+  background-color: $wolox-white;
+  border: 0;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin: 360px 400px;
+  width: 50px;
+}
+
+.found-it-img {
+  height: 100px;
+}
+
+.color-blue {
+  color: $wolox-blue;
+}
+
+.color-green {
+  color: $wolox-green;
+}
+
+.h-line {
+  border: solid 1px;
+}
+
+.left {
+  align-self: flex-end;
+}
+
+.m-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.perk-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.perk-title {
+  font-size: 50px;
+}
+
+.perk-sub-title {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.perk-description {
+  font-size: 30px;
+}
+
+.m-bottom-3 {
+  margin-bottom: 30px;
+}
+
+.fount-it-button2 {
+  align-items: center;
+  background-color: $wolox-white;
+  border: 0;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin: 600px 400px;
+  width: 50px;
+}
+
+.text-button {
+  color: $wolox-green;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
 .first-o {
   color: $bright-blue;
 }
@@ -50,6 +137,8 @@
 }
 
 .bubble {
+  font-size: 150px;
+  margin-top: 6px;
 
   &.present {
     -moz-box-shadow: 0 0 59px 19px $register-back;
@@ -58,11 +147,43 @@
     border-radius: 50%;
     box-shadow: 0 0 59px 19px $register-back;
     height: 200px;
-    margin: 0 auto;
+    margin: 0 -25px;
+    text-align: center;
     width: 200px;
   }
 
   &.future {
     opacity: 0.3;
   }
+}
+
+.final-title {
+  color: $wolox-blue;
+  font-size: 80px;
+  line-height: 92px;
+  margin-bottom: 50px;
+}
+
+.sumary-content {
+  font-size: 38px;
+  width: 380px;
+}
+
+.last-thing {
+  color: $wolox-blue;
+  font-size: 40px;
+  margin: 60px 0;
+}
+
+.final-content {
+  display: flex;
+}
+
+.final-background {
+  background-image: url('../assets/fondo-final.png');
+}
+
+.avatar-img {
+  height: 630px;
+  width: 300px;
 }

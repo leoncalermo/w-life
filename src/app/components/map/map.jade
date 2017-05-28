@@ -1,29 +1,21 @@
 .map
-  .row
-    .col-sm-6.main-letter
-      .bubble(ui-sref='principal.level1', ng-class="{present: mapCtrl.level === 1, future: mapCtrl.level < 1}")
+  .column-map.m-column-right
+    .level-row.right
+      .bubble(ui-sref='principal.level1', ng-class="{present: mapCtrl.level === 0}")
         | W
-    .col-sm-6.main-letter.gap
-      | #
-  .row
-    .col-sm-6.main-letter.gap
-      | #
-    .col-sm-6.main-letter.first-o
-      .bubble(ui-sref='principal.level2', ng-class="{present: mapCtrl.level === 2, future: mapCtrl.level < 2}")
+  .column-map.m-column-left
+    .level-row.left.first-o
+      .bubble(ui-sref='principal.level2', ng-class="{present: mapCtrl.level === 1, future: mapCtrl.level < 1}")
         | O
-  .row
-    .col-sm-6.main-letter
-      .bubble(ui-sref='principal.level3', ng-class="{present: mapCtrl.level === 3, future: mapCtrl.level < 3}")
+  .column-map.m-column-right
+    .level-row.right
+      .bubble(ui-sref='principal.level3', ng-class="{present: mapCtrl.level === 2, future: mapCtrl.level < 2}")
         | L
-    .col-sm-6.main-letter.gap
-      | #
-  .row
-    .col-sm-6.main-letter.gap
-      | #
-    .col-sm-6.main-letter.second-o
-      .bubble(ui-sref='principal.level4', ng-class="{present: mapCtrl.level === 4, future: mapCtrl.level < 4}")
+  .column-map.m-column-left
+    .level-row.left.second-o
+      .bubble(ui-sref='principal.level4', ng-class="{present: mapCtrl.level === 3, future: mapCtrl.level < 3}")
         | O
-  .row
-    .col-sm-6.main-letter
-      .bubble(ui-sref='principal.level5', ng-class="{present: mapCtrl.level === 5, future: mapCtrl.level < 5}")
+  .column-map.m-column-right
+    .level-row.right
+      .bubble(ui-sref='principal.level5', ng-class="{present: mapCtrl.level === 4, future: mapCtrl.level < 4}")
         | X

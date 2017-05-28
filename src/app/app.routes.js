@@ -101,7 +101,9 @@ angular.module('app-bootstrap').config([
         url: '/level4',
         views: {
           'rest-page': {
-            templateUrl: '../app/components/level4/level4.html'
+            templateUrl: '../app/components/level4/level4.html',
+            controller: 'Level4Controller',
+            controllerAs: 'lvl4Ctrl'
           }
         }
       })
@@ -109,7 +111,9 @@ angular.module('app-bootstrap').config([
         url: '/level5',
         views: {
           'rest-page': {
-            templateUrl: '../app/components/level5/level5.html'
+            templateUrl: '../app/components/level5/level5.html',
+            controller: 'Level5Controller',
+            controllerAs: 'lvl5Ctrl'
           }
         }
       })

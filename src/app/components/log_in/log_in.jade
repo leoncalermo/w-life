@@ -1,6 +1,6 @@
 .body-back
   form.form-formate(name='log_in_registration' novalidate ng-submit='logInCtrl.requestLogIn(log_in_registration.$valid)')
-      img.logo-wolox-life(src='../assets/WOLOX-LIFE-LOGO.png')
+      img.logo-wolox-life(src='../assets/wolox-life-treasure.png')
       img.title-w-life(src='../assets/cofre.png')
       .field-section
         span.field
@@ -9,5 +9,5 @@
         span.field
           | {{ 'LOG_IN.BUDDY' | translate }}
         input.mail(type='password' name='password' required ng-model='logInCtrl.requestLogInn.password')
-      button.but-style(type='text')
-        | {{ 'LOG_IN.START' | translate }}
+        button.but-style.m-top-2(type='text')
+          | {{ 'LOG_IN.START' | translate }}
