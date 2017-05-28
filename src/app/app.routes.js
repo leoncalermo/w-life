@@ -53,13 +53,13 @@ angular.module('app-bootstrap').config([
           }
         }
       })
-      .state('principal.home', {
-        url: '/home',
+      .state('principal.intro', {
+        url: '/intro',
         views: {
           'rest-page': {
-            templateUrl: '../app/components/principal/home/home.html',
-            controller: 'HomeController',
-            controllerAs: 'homeCtrl'
+            templateUrl: '../app/components/principal/intro/intro.html',
+            controller: 'IntroController',
+            controllerAs: 'introCtrl'
           }
         }
       })

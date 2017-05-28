@@ -3,10 +3,9 @@ angular.module('app-bootstrap').config([
   function ($translateProvider) {
     $translateProvider.translations ('es', {
       LOG_IN: {
-        TITLE: 'Comenzar aventura',
         MAIL: 'Mail de Wolox',
         BUDDY: 'Escribe el nombre de tu buddy',
-        START: 'Comenzar'
+        START: 'Comenzar aventura'
       }
     });
   }
