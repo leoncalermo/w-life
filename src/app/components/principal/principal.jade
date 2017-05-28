@@ -1,24 +1,5 @@
 .home-header
-  a(ui-sref='principal.home')
-    img.wbooks(src='../assets/wbooks_logo.svg')
-  .tab-options
-    span(uib-dropdown on-toggle='toggled(open)')
-      a(href='#' id='simple-dropdown' uib-dropdown-toggle)
-        img.feature(src='../assets/notifications.svg')
-      ul.dropdown-menu.not-list(uib-dropdown-menu aria-labelledby='simple-dropdown')
-        li
-          a(href='#')
-            | {{ 'HEADER.BUT_NOT' | translate }}
-    button.but-not(type='button' ng-click='prinCtrl.suggestBook()')
-      img.feature(src='../assets/add_book.svg')
-    span(uib-dropdown on-toggle='toggled(open)')
-      a(href='#' id='simple-dropdown' uib-dropdown-toggle)
-        img.nav-item(src='http://placehold.it/100x100')
-      ul.add-list.dropdown-menu(uib-dropdown-menu aria-labelledby='simple-dropdown' id='prueba')
-        li
-          a(ui-sref='principal.profile')
-            | {{ 'HEADER.BUT_PROFIL' | translate }}
-        li
-          a(href='#' ng-click='prinCtrl.onLogOut()')
-            | {{ 'HEADER.BUT_LOG_OUT' | translate }}
+  img.wbooks(src='../assets/wolox_life.png')
+  a(ui-sref='principal.map')
+    img.wbooks(src='../assets/cofre.png')
 .rest(ui-view='rest-page')

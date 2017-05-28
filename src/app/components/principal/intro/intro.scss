@@ -4,6 +4,59 @@
   font-family: 'Roboto', Sans-Serif;
  }
 
+.intro-content {
+  margin: 0 auto;
+  max-width: 700px;
+  position: relative;
+}
+
+.p-top-5 {
+  padding-top: 50px;
+}
+
+.center2 {
+  align-self: center;
+  text-align: center;
+}
+
+.intro-speach {
+  // background-color: $wolox-blue;
+  background-color: $wolox-white;
+  border: solid 2px $wolox-blue;
+  border-radius: 20px;
+  // color: $wolox-white;
+  color: $wolox-blue;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 50px;
+  padding: 15px;
+  position: absolute;
+  top: 350px;
+}
+
+.p-left-15 {
+  padding-left: 230px;
+}
+
+.title2 {
+  font-size: 24px;
+  font-weight: bolder;
+  color: $wolox-black;
+}
+
+.start-button {
+  background-color: $wolox-blue;
+  border-radius: 10px;
+  color: $wolox-white;
+  font-size: 25px;
+  font-weight: bolder;
+  height: 55px;
+  margin-left: 230px;
+  margin-top: 600px;
+  width: 350px;
+}
+
 .home-content {
   margin: 0 auto;
   max-width: 700px;
