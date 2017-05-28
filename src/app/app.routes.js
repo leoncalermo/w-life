@@ -63,6 +63,16 @@ angular.module('app-bootstrap').config([
           }
         }
       })
+      .state('principal.map', {
+        url: '/map',
+        views: {
+          'rest-page': {
+            templateUrl: '../app/components/map/map.html',
+            controller: 'MapController',
+            controllerAs: 'mapCtrl'
+          }
+        }
+      })
       .state('principal.books', {
         url: '/books/{objectId}',
         views: {

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Days+One');
+
+.map {
+  background-color: $yellow-green;
+  height: calc(100vh - 92px);
+}
+
+.main-letter {
+
+  & > .bubble {
+    font-size: 150px;
+    font-family: 'Days One', sans-serif;
+    text-align: center;
+  }
+
+  &.gap {
+    opacity: 0;
+  }
+}
+
+.first-o {
+  color: $bright-blue;
+}
+
+.second-o {
+  color: $wolox-green;
+}
+
+.bubble {
+
+  &.present {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 59px 19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 59px 19px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 59px 19px rgba(0,0,0,0.75);
+  }
+
+  &.future {
+    opacity: 0.3;
+  }
+}
